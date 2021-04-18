@@ -1,0 +1,121 @@
+header {
+    height: 100px;
+    width: 100%;
+    background-color: #5d5c61;
+    color:#b1a296;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+body{
+    background-color: #8f9192;
+    padding: 0px;
+    margin:0px;
+}
+@media screen and (max-width:600px){
+    container.flex-nav{
+        min-height: 40px;
+        display: flex;
+        flex-direction: column;
+        background-color:#7395ae;
+        color:#b1a296;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    aside{
+        display: none;
+    }
+    article{
+        flex-direction: column;
+    }
+
+    article{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        background-color: #8f9192;
+    }
+
+    section{
+        background-color: #557a95;
+        flex-direction: column;
+        align-items:flex-start;
+        color:#b1a296;
+        text-align: center;
+        flex: 1;
+        padding-left: 40px;
+        padding-right:40px;
+        padding-top:10px;
+        padding-bottom: 10px;
+        margin: 15px;
+    
+    }
+
+    footer {
+        display: flex;
+        align-self: flex-end;
+        text-align: left;
+        height: 40px;
+        width: 100%;
+        background-color: #5d5c61;
+        color:#b1a296;
+        padding-top: 5px;
+        padding-left: 10px;
+    }
+}
+
+@media screen and (min-width:600px){
+container.flex-nav{
+    min-height: 40px;
+    display: flex;
+    flex-direction: row;
+    background-color:#7395ae;
+    color:#b1a296;
+    justify-content: space-evenly;
+    align-items: center;
+    }
+
+article{
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #8f9192;
+    width: 80%;
+
+}
+section{
+    background-color: #557a95;
+    min-width: 150px;
+    color:#b1a296;
+    text-align: center;
+    flex: 1;
+    padding-left: 40px;
+    padding-right:40px;
+    padding-top:10px;
+    padding-bottom: 10px;
+    margin: 15px;
+
+}
+
+aside{
+    float: right;
+    width: 20%;
+    flex: 1;
+    background-color: #2a3e4d;
+    color:#b1a296;
+
+}
+
+footer {
+    display: flex;
+    align-self: flex-end;
+    text-align: left;
+    height: 40px;
+    width: 100%;
+    background-color: #5d5c61;
+    color:#b1a296;
+    padding-top: 5px;
+    padding-left: 10px;
+}
+}
+
